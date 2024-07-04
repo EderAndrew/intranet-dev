@@ -65,4 +65,5 @@ export const login = async(formData: any) => {
 
 export const logout = async() => {
     cookies().set('session', '', { expires: new Date(0) })
+    return false
 }
